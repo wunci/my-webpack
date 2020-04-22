@@ -501,4 +501,4 @@ const resolve = function(filename) {
 
 ## 公众号
 
-![img](./gzh.png)
+![img](./gzh.jpg)
