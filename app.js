@@ -32,7 +32,11 @@ const resolve = function(filename) {
         );
         if (installedChunks[realPath] !== undefined) return;
         let sourse = fs.readFileSync(realPath, "utf-8");
-        sourse = `jsonp.load([${bundleId}, function(){${sourse}}])`;
+        // 转es5
+        const { code } = babel.transform(sourse, {
+          presets: ["@babel/preset-env"]
+        });
+        sourse = `jsonp.load([${bundleId}, function(){${code}}])`;
         fs.writeFileSync(`./dist/${bundleId}.bundle.js`, sourse);
         installedChunks[realPath] = bundleId;
         bundleId++;

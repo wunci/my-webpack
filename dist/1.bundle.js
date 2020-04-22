@@ -1,2 +1,3 @@
-jsonp.load([1, function(){console.log("import b");
-}])
+jsonp.load([1, function(){"use strict";
+
+console.log("import b");}])
