@@ -497,7 +497,7 @@ const resolve = function(filename) {
 
 代码已上传至 `GitHub`： https://github.com/wclimb/my-webpack
 
-本文地址 http://www.wclimb.site/2020/03/15/vue-source-code-data-bind/
+本文地址 http://www.wclimb.site/2020/04/22/simple-webpack/
 
 ## 公众号
 
