@@ -501,4 +501,4 @@ const resolve = function(filename) {
 
 ## 公众号
 
-![img](http://www.wclimb.site/img/gzh.png)
+![img](./gzh.png)
